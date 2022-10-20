@@ -1,0 +1,67 @@
+.experience__section__title {
+  display: flex;
+  justify-content: center;
+  /* color: brown; */
+}
+
+/* .experience__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px ;
+  
+} */
+
+.experience__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.experience .experience__box:nth-child(2n) {
+  /* color: aqua; */
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.experience__description {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.experience__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience__botao--demo {
+  background-color: var(--col-button);
+  /* font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 16px; */
+
+  /* identical to box height */
+
+  border-style: none;
+  /* Preto/branco */
+  border-radius: 100px;
+  color: var(--col-de-back-nav);
+}
+
+.experience__botao--repo {
+  border: 1px solid var(--col-button);
+  color: var(--col-button);
+  border-radius: 100px;
+}
+
+.experience__botao--repo,
+.experience__botao--demo {
+  padding: 16px;
+}

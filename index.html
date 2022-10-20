@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layouts/titleBio.css">
+    <link rel="stylesheet" href="/css/layouts/skills.css">
+    <link rel="stylesheet" href="/css/layouts/academic.css">
+    <link rel="stylesheet" href="/css/layouts/experience.css">
+    <link rel="stylesheet" href="/css/layouts/form.css">
+    <link rel="stylesheet" href="/css/layouts/footer.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Fasthand">
     <title> Mi Portafolio</title>
 </head>
 <body>
@@ -18,7 +28,7 @@
     <section class="menu">
         <header class="menu__header">
             <img src="assets\vector.png">
-            <h3 class="menu__title">Fulana de Tal</h3>
+            <h3 class="menu__title">Breyner Ocampo Cárdenas</h3>
         </header>
         <nav>
             <ul class="menu__list">
@@ -27,19 +37,21 @@
                 <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
                 <li class="menu__list__item"><a href="#formacion">Formación</a></li>
                 <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li>
+                <!-- <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li> -->
+                            <li class="menu__list__item__contato"><a href="#contacto">BreyDevOC.95@gmail.com</a></li>
             </ul>
-            <li class="menu__list__item__contato"><a href="#contacto">contacto@fulana.com</a></li>
+
         </nav>
     </section>
 
     <!-- Sección del Header/Title/Hero -->
     <section class="title">
         <div class="title__div">
-            <img class="title__profile" src="assets\profile.png">
+            <img class="title__profile" src="assets/yo.jpg">
             <div class="title__container">
-                <h2 class="title__bio">Hola, mi nombre es Fulana de Tal y construyo paginas web</h2>
-                <h3 class="title__subsection">Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
+                <h2 class="title__bio">Hola, mi nombre es <span><blockquote>Breyner Ocampo Cárdenas</blockquote></span> de Colombia y construyo paginas web</h2>
+                <h3 class="title__subsection">Soy formado en Front-end, Back-end con distintas tenologías
+                     lorem ipsum sit amet  y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
                 <ul class="title__network">
                      <!-- Pon los enlaces de tus redes sociales favoritas -->
                     <li class="title__network__item"><a href="">Github <img src="assets\arrow.png"> </a></li>
@@ -50,7 +62,8 @@
             </div>
         </div>
     </section>
-    
+
+
     <!-- Sección sobre mi -->
     <section class="about" id="sobre-mi">
         <div class="about__container">
@@ -58,7 +71,9 @@
             <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.  </p>
             <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
             <!-- Si quieres, pon tú firma acá! -->
-            <img src="assets\signature.png">
+            <!-- <img src="assets\signature.png"> -->
+            <!-- <span style="font-family: 'Fasthand', serif;">Breyner</span> -->
+            <span  class="about__signature">Breyner</span>
         </div>
     </section>
 
@@ -192,29 +207,33 @@
     <!-- Sección de Experiencia Profesional/Proyectos-->
     <section class="experience" id="xp">
         <h2 class="experience__section__title" >Experiencia Profissional</h2>
-        <div class="experiencie__box">
+ 
+   
+        <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="assets\decod_print.png">
-            <div class="experience__info"
+            <div class="experience__info">
                 <h2 class="experience__title">Encriptador de texto</h2>
                 <h3 class="experience__text">Challenge Alura Codificador </h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experience__botao--repo">Repositório</button></a></span>
                             <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
+         
+
             </div>
         </div>  
 
-        <div class="experiencie__box">
+        <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="assets\forca_print.png">
-            <div class="experience__info"
+            <div class="experience__info">
                 <h2 class="experience__title">Juego creado con HTML y JavaScript</h2>
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experience__botao--repo">Repositório</button></a></span>
                             <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
@@ -223,12 +242,12 @@
         <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="assets\secretcode_print.png">
-            <div class="experience__info-container"
+            <div class="experience__info">
                 <h2 class="experience__title">Encriptador de texto</h2>
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experience__botao--repo">Repositório</button></a></span>
                             <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
@@ -236,16 +255,17 @@
 
         <div class="experience__box">
             <img class="experience__img" src="assets\forca2_print.png">
-            <div class="experience__info-container"
+            <div class="experience__info">
             <h2 class="experience__title">Juego creado con HTML, CSS y JavaScript</h2>
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experience__botao--repo">Repositório</button></a></span>
                             <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
         </div>
         </div>  
+            </section>
 
         <!-- Sección de Contacto -->
         <section class="formcontato" id="contacto">
@@ -271,10 +291,103 @@
         <!-- Sección de Footer -->
         <section class="footer">
             <div class="footer__rodape">
-                <p>Desarrollado por Fulana de Tal</p>
-                <p>2022</p>
+                <div class="footer__addr">
+                    <div class="footer_title">
+    <h1 class="footer__logo">More info</h1>
+                    </div>
+
+  <div class="footer__contact">
+      <!-- <h2>Contact</h2> -->
+    
+    <address>
+     Colombia<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Online</a>
+        </li>
+
+        <li>
+          <a href="#">Print</a>
+        </li>
+            
+        <li>
+          <a href="#">Alternative Ads</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">Technology</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="#">Physic</a>
+        </li>
+            <li>
+          <a href="#">Mathematics</a>
+        </li>
+        
+        <li>
+          <a href="#">Software Design</a>
+        </li>
+        
+        
+
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        
+        <li>
+          <a href="#">IoT</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+        
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2022  All rights reserved.</p>
+    
+    <div class="legal__links">
+      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+    </div>
+  </div>
             </div>
         </section>
+
+
+
+
+
+        
     </div>
  <!-- Script del documento JavaScript -->
 <script src="validacion.js"></script>

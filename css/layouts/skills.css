@@ -1,0 +1,22 @@
+.skills__line , .hobbies__line{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.skills__box , .hobbies__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 8px;
+
+  width: 176px;
+  height: 174px;
+
+  /* Preto/branco */
+
+  background: var(--col-de-back-nav);
+}

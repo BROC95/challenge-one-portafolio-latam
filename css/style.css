@@ -1,0 +1,216 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+  /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --cor-de-fundo: #f5f5f5;
+  --cor-de-link: #000;
+  --col-de-back-nav: #fff;
+  --col-button: #2a7ae4;
+  /* --col-de-back-nav: #fff; */
+  /* --col-de-back-inf: #EAF2FD; */
+  --col-de-back-inf: #eaf2fd;
+  --Raleway: "Raleway", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+  --Fasthand: "Fasthand", serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  /* background-color: var(--col-de-back-inf); */
+  /* font-family: var(--Raleway); */
+  font-family: var(--Raleway);
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+/* .tudo{ */
+
+/* } */
+blockquote {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+/* blockquote {
+  quotes: "«" "»";
+} */
+blockquote:before {
+  content: open-quote;
+}
+blockquote:after {
+  content: close-quote;
+}
+
+section.menu {
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__header {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.menu__list {
+  display: flex;
+  /* flex-direction: column; */
+  padding-right: 50px;
+  /* align-content: space-around; */
+  align-items: center;
+}
+
+.menu__list__item {
+  padding-right: 10px;
+}
+
+.menu__list__item__contato {
+  font-weight: bold;
+}
+/*Sección Title*/
+.title__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-content: space-around;
+  /* padding-top: 100px; */
+  /* margin: 100px; */
+}
+
+/* .title__bio .title__subsection .title__network {
+    margin: 100px 0 100px 0;
+} */
+section.title {
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* margin-bottom: 100px; */
+}
+
+/*Sección About*/
+
+section.about {
+  background-color: var(--col-de-back-inf);
+  padding: 64px 152px;
+}
+
+/* Secction skills */
+section.skills {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 100px;
+}
+
+/*Sección Hobbies*/
+
+section.hobbies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 100px;
+}
+
+/* Experiencia Académica*/
+
+section.academic {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-de-back-inf);
+  padding: 64px 152px;
+}
+
+/* experiencia*/
+
+section.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  padding: 64px 152px;
+}
+
+/*Contacto*/
+
+section.formcontato {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: var(--col-de-back-inf);
+  padding: 64px 152px;
+}
+
+/*footeer*/
+
+section.footer {
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+/*Tablet*/
+@media (min-width: 768px) {
+  /* Menú */
+
+  /*title*/
+
+  /*Skills*/
+
+  /*Hobbies*/
+
+  /*Formación Académica*/
+
+  /*Experiencia Profesional*/
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+  /*Menu*/
+
+  /*Titulo*/
+
+  /*Sección sobre mi*/
+
+  /*Skills*/
+
+  /*Hobbies*/
+
+  /*Formación Académica*/
+
+  /*Experiencia Profesional*/
+
+  /*Contacto*/
+
+  /*Footer*/
+}
