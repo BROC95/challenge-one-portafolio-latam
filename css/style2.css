@@ -1,5 +1,26 @@
+:root {
+  /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --cor-de-fundo: #f5f5f5;
+  --cor-de-link: #000;
+  /* --col-sec: #fb6d3a; */
+  --col-sec: #0dc80a;
+  --col-sec2: #ed845e;
+  --col-button: #2a7ae4;
+  /* --col-de-back-nav: #fff; */
+  /* --col-de-back-inf: #EAF2FD; */
+  --col-de-back-inf: #eaf2fd;
+  --col-text:  #595959;
+  /* --Raleway: "Raleway", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+  --Fasthand: "Fasthand", serif; */
+}
+
+
+
 body {
   background-color: #e5e5e5;
+  /* background-color: #e5e5e5; */
   font-family: "Montserrat", sans-serif;
   /* box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1); */
   margin: 20px;
@@ -30,7 +51,7 @@ li {
   font-size: 22px;
   line-height: 27px;
 
-  color: #fb6d3a;
+  color:  var(--col-sec);
 }
 .nombre {
   font-style: normal;
@@ -41,7 +62,7 @@ li {
   color: #000000;
 }
 .info-per {
-  width: 400px;
+  /* width: 400px; */
   /* height: 120px; */
   /* left: 498px; */
   /* top: 252px; */
@@ -51,6 +72,7 @@ li {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  text-align: justify;
   /* or 171% */
 
   color: #595959;
@@ -90,7 +112,10 @@ li {
   line-height: 20px;
 }
 .text-naranja {
-  color: #fb6d3a;
+  color:var(--col-sec);
+}
+.text-naranja2 {
+  color:var(--col-sec2);
 }
 .exp-laboral {
   /* background-color: aquamarine; */
@@ -114,6 +139,7 @@ li {
 
   color: #000000;
   padding-left: 12px;
+  text-align: justify;
 }
 .educ {
   /* background-color: bisque; */
@@ -156,9 +182,10 @@ height: 1319px; */
   line-height: 24px;
   /* or 171% */
 
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: var(--col-de-back-inf)
 
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .hab-soft {
@@ -188,12 +215,12 @@ height: 1319px; */
 }
 
 .hab-tec > ul {
-  color: #fb6d3a;
+  color:  var(--col-sec);
   /* padding-right: 0; */
   margin-left: -20px;
 }
 .hab-soft > ul {
-  color: #fb6d3a;
+  color:  var(--col-sec);
   /* padding-right: 0; */
   margin-left: -20px;
 }
